@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daftar Menu Makanan</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .menu-item {
+            width: calc(25% - 10px);
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            width: calc(25% - 40px);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .menu-item h3 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .menu-item button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-item button:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Daftar Menu Makanan</h1>
+    <div class="container">
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1680674774705-90b4904b3a7f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h3>Nasi Goreng</h3>
+            <p>Nasi goreng adalah makanan yang terbuat dari nasi yang digoreng dan dicampur dengan berbagai bumbu serta bahan lainnya.</p>
+            <button>Pesan</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h3>Mie Ayam</h3>
+            <p>Mie ayam adalah makanan yang terbuat dari mie yang dicampur dengan daging ayam dan berbagai bumbu lainnya.</p>
+            <button>Pesan</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://picsum.photos/id/1018/200/200" alt="">
+            <h3>Gado-Gado</h3>
+            <p>Gado-gado adalah makanan yang terbuat dari sayuran yang dicampur dengan berbagai bumbu lainnya.</p>
+            <button>Pesan</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1706922122195-a1d670210618?q=80&w=1126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <h3>Martabak</h3>
+            <p>Martabak adalah makanan yang terbuat dari telur dan dicampur dengan berbagai bumbu lainnya.</p>
+            <button>Pesan</button>
+        </div>
+    </div>
+
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Terima kasih telah memesan makanan!');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
